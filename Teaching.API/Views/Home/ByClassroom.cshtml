@@ -1,0 +1,12 @@
+﻿@model  List<TeachingDb.Entities.Student>
+
+<h2>ByClassroom</h2>
+
+<ul>
+    @foreach (var student in Model)
+    {
+    <li>@($"{student.Name} {student.Surname} navstevuje {student.Classroom.Name} ")</li>
+    }
+    
+</ul>
+
